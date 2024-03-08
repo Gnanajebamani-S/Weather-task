@@ -41,7 +41,7 @@ function bar(data1) {
 
 function weather(lat, lon) {
   var result = fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=7078e6da30d728cb34b10f1a9655d21a`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=`
   )
     .then((data2) => data2.json())
     .then((data3) => alert(`Temperature : ${data3.main.temp} Kelvin`));
